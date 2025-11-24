@@ -160,6 +160,12 @@ header {
     /* filter: drop-shadow(5px 5px 3px black); */
     border-right: 2px  solid;
 }
+.sec_2_lamp img{
+    /* bottom: 500px; */
+    width: 80%;
+
+}
 .sec_2_lamp{
-    top: 50px;
+    bottom: 40px;
+    left:600px;
 }
