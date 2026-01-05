@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="https://furniforma.wpengine.com/wp-content/themes/furniforma/assets/images/logo.svg"
+        type="image/x-icon">
+
 </head>
 
 <body>
     <header class="position-relative">
         <main>
             <div class="top-bar bg-dark text-white py-1 small">
-                <div class="container d-flex justify-content-between">
+                <div class="d-flex justify-content-between">
                     <div>
                         <span>Track Your Order | info@example.com</span>
                     </div>
@@ -29,19 +33,17 @@
                     </div>
                 </div>
             </div>
-            <div class=" justify-content-between d-flex p-2">
+            <div class=" justify-content-between d-flex aic">
                 <div class="logo aic">
                     <img src="https://furniforma.wpengine.com/wp-content/themes/furniforma/assets/images/logo.svg"
                         alt="">
                 </div>
                 <nav class="nav_manu">
-                    <ul class="d-flex p-2">
-                        <li>HOME ▼</li>
-                        <li>PAGES ▼</li>
-                        <li>SHOP ▼</li>
-                        <li>BLOG ▼</li>
-                        <li>CONTACT US</li>
-                    </ul>
+                    <button>HOME ▼</button>
+                    <button>PAGES ▼</button>
+                    <button>SHOP ▼</button>
+                    <button>BLOG ▼</button>
+                    <button>CONTACT US</button>
                 </nav>
                 <div class="nev_icons">
                     <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i>
@@ -56,7 +58,7 @@
 
 
     <section class="bg_color">
-        <div class="container">
+        <div class="containar">
             <div class="lamp">
                 <img class="position-absolute"
                     src="https://furniforma.wpengine.com/wp-content/uploads/2024/09/furniforma-about-filler-img1.png"
@@ -77,24 +79,67 @@
                         alt="">
                 </div>
             </div>
-            <div class="d-flex p-2">
+            <div class="step_container">
+                <span class="number active">01</span>
+
+                <span class="line active"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+                <span class="number">03</span>
+            </div>
+        </div>
     </section>
 
     <!-- <section>section-2 start hear</section> -->
 
     <section>
-        <div class="sec_2 d-flex p-2 position-relative">
+        <div class="sec_2 d-flex  position-relative">
             <div class="col_50 sec_2_div_1 d-flex p-2">
-                <div class="sec_2_chair_1 d-flex p-2">
-                    <img src="./assets/Img/chair_1.png" alt="">
+
+                <!-- Slide 1 -->
+                <div class="sec_2_slide active">
+                    <img src="./assets/Img/chair_1.png">
+                    <div class=" sec_2_div_1_text">
+                        <h4>TIMBERLY</h4>
+                        <h1>Balcony Sofa</h1>
+                        <p>$100.00</p>
+                        <button class="sec_2_btn">Shop Now</button>
+                    </div>
                 </div>
-                <div class="sec_2_text_1">
-                    <span>Timberly</span>
-                    <h4>Balcony Sofa</h4>
-                    <span>$100.00</span>
-                    <button>Shop Now</button>
+
+                <!-- Slide 2 -->
+                <div class="sec_2_slide">
+                    <img src="./assets/Img/chair_2.png">
+                    <div class=" sec_2_div_1_text">
+                        <h4>MODERN</h4>
+                        <h1>Bedside Lamp</h1>
+                        <p>$120.00</p>
+                        <button class="sec_2_btn">Shop Now</button>
+                    </div>
                 </div>
+
+                <!-- Slide 3 -->
+                <div class="sec_2_slide">
+                    <img src="./assets/Img/sec_2_chair_3.png">
+                    <div class=" sec_2_div_1_text">
+                        <h4>COMFORT</h4>
+                        <h1>Living Room Sofa</h1>
+                        <p>$150.00</p>
+                        <button class="sec_2_btn">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="sec_2_dots">
+                    <span class="sec_2_dot_1 active" onclick="showSlide(0)"></span>
+                    <span class="sec_2_dot_1" onclick="showSlide(1)"></span>
+                    <span class="sec_2_dot_1" onclick="showSlide(2)"></span>
+                </div>
+
             </div>
+
+
             <div class="col_50 sec_2_div_2 d-flex p-2 justify-content-between aic">
                 <div class="col_30 sec_2_cart">
                     <h4>12K</h4>
@@ -110,33 +155,714 @@
                 </div>
             </div>
             <div class="position-absolute sec_2_lamp">
-                <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/09/Home-1-slider-lamp-img.png" alt="">
+                <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/09/Home-1-slider-lamp-img.png"
+                    alt="">
             </div>
         </div>
     </section>
 
     <!-- <section>section-3 start hear</section> -->
 
-    <section class="container">
+    <section class="containar">
         <div class="sec_3">
             <div class="div_3_text">
                 <span>Shop Smart, Shop Sorted</span>
                 <h2>Discover By Category</h2>
-                <p>Vehicula magana morbi netus augue odio suscipit maecenas ridiculus laoreet Sodales dignissim iaculis vehicula</p>
+                <p>Vehicula magana morbi netus augue odio suscipit maecenas ridiculus laoreet Sodales dignissim iaculis
+                    vehicula</p>
             </div>
-            <div>
-                <div class="col_20"></div>
-                <div class="col_20"></div>
-                <div class="col_20"></div>
-                <div class="col_20"></div>
-                <div class="col_20"></div>
+
+
+            <!-- <div class="d-flex p-2 justify-content-between tac">
+                <div class="col_20 sec_3_cart">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-14.png" alt="">
+                    <h4>Bench</h4>
+                    <span>-2 ITEMS-</span>
+                </div>
+                <div class="col_20 sec_3_cart tac">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-01.png" alt="">
+                    <h4>Bookcase</h4>
+                    <span>-2 ITEMS-</span>
+
+                </div>
+                <div class="col_20 sec_3_cart">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-11.png" alt="">
+                    <h4>Dining Table</h4>
+                    <span>-2 ITEMS-</span>
+
+                </div>
+                <div class="col_20 sec_3_cart">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/catagory-dressing-table-2.jpg"
+                        alt="">
+                    <h4>Dressing Table</h4>
+                    <span>-2 ITEMS-</span>
+                </div>
+                <div class="col_20 sec_3_cart">
+                    <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-03.png"
+                        alt="">
+                    <h4>Office Chair</h4>
+                    <span>-5 ITEMS-</span>
+                </div>
+            </div> -->
+        </div>
+
+
+
+
+        <div class="sec_3_slider d-flex p-2 justify-content-between tac">
+
+            <button class="sec_3_nav_btn left" onclick="slideLeft()">&#10094;</button>
+
+            <div class="sec_3_slide">
+                <div class="slider-track d-flex">
+
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-14.png">
+                        <h3>Bench</h3>
+                        <p>- 2 ITEMS -</p>
+                    </div>
+
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-01.png">
+                        <h3>Bookcase</h3>
+                        <p>- 2 ITEMS -</p>
+                    </div>
+
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-11.png">
+                        <h3>Dining Table</h3>
+                        <p>- 2 ITEMS -</p>
+                    </div>
+
+                    <div class="sec_3_cart">
+                        <img
+                            src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/catagory-dressing-table-2.jpg">
+                        <h3>Dressing Table</h3>
+                        <p>- 2 ITEMS -</p>
+                    </div>
+
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-03.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-08.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-02.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-09.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-12.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-05.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-06.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+                    <div class="sec_3_cart">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-category-img-07.png">
+                        <h3>Office Chair</h3>
+                        <p>- 5 ITEMS -</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="sec_3_nav_btn right" onclick="slideRight()">&#10095;</button>
+
+        </div>
+    </section>
+
+    <!-- <section>section-4 start hear</section> -->
+
+    <section class="containar">
+        <div class="position-relative">
+            <div class="sec_4 ">
+                <div class="sec_4_img">
+                    <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/Hostspot-banner-01-bg-2048x1016.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="sec_4_cart position-absolute">
+                <h3>Elegant Luxury Sofa</h3>
+                <span>124 Products</span>
+                <p>Donec sit amet turpis tincidunt eros, nam porttitor massa leo porta maecenas reque.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="sec_4_sofa_img position-absolute">
+                <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/ff-hotspot-img-01.png" alt="">
             </div>
         </div>
     </section>
 
-    <section>
+    <!-- <section>section-5 start hear</section> -->
 
+    <section class="containar">
+        <div class="sec_5 d-flex">
+            <div class="col_30 sec_5_text">
+                <span>Shop Now & Save</span>
+                <h2>Hurry! Deals End Soon!</h2>
+                <button>Grab This Deals</button>
+            </div>
+            <div class="col_30 sec_5_table_img tac">
+                <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/Home-1-counter-bg-img-01.png"
+                    alt="">
+            </div>
+            <div class="col_30 d-flex aic tac sec_5_div_3 justify-content-between">
+                <div class="col_25">
+                    <h2>00</h2>
+                    <span>DAYS</span>
+                </div>
+                <div class="col_25">
+                    <h2>00</h2>
+                    <span>HRS</span>
+                </div>
+                <div class="col_25">
+                    <h2>00</h2>
+                    <span>MINS</span>
+                </div>
+                <div class="col_25">
+                    <h2>00</h2>
+                    <span>SECS</span>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- <section>section-6 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_6 d-flex">
+            <div class="col_50 sec_6_div_1">
+                <span>Premium Furnitures</span>
+                <h2>Shop premium collections</h2>
+            </div>
+            <div class="col_50 sec_6_div_2 d-flex p-2 aic tac">
+                <div class="col_30 sec_6_div_2_cart">
+                    <i class="fa-solid fa-chair"></i>
+                    <span>All Furniture</span>
+                </div>
+                <div class="col_30 sec_6_div_2_cart">
+                    <i class="fa-solid fa-arrow-up-right-dots"></i>
+                    <span>Best Sellers</span>
+                </div>
+                <div class="col_30 sec_6_div_2_cart">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>New Arrivals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>section-7 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_7">
+            <div class="sec_7_carts d-flex justify-content-between">
+                <div class="col_25 sec_7_cart_1 tac ">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/ff-shop-product-1-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <i class="fa-light fa-cart-arrow-down"></i>
+                    <h4>Solid Wood Chair</h4>
+                    <span><del>$80</del> $75.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <div class="col_25 sec_7_cart_1 tac ">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-3-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <i class="fa-light fa-cart-arrow-down"></i>
+                    <h4>Solid Wood Chair</h4>
+                    <span><del>$80</del> $75.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <div class="col_25 sec_7_cart_1 tac ">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-5-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <i class="fa-light fa-cart-arrow-down"></i>
+                    <h4>Solid Wood Chair</h4>
+                    <span><del>$80</del> $75.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col_25 sec_7_cart_1 tac">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-6-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <h4>Wooden Round Table</h4>
+                    <span><del>$80</del> $75.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="sec_7_carts d-flex justify-content-between ">
+                <div class="col_25 sec_7_cart_1 tac ">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-7-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <h4>Office Chair</h4>
+                    <span><del>$100</del> $90.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col_25 sec_7_cart_1 tac ">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-38-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <h4>Wooden Garden Bench</h4>
+                    <span><del>$115</del> $110.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+
+                </div>
+                <div class="col_25 sec_7_cart_1 tac ">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-31-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <h4>Table Lamp</h4>
+                    <span><del>$185</del> $180.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+
+                </div>
+                <div class="col_25 sec_7_cart_1 tac">
+                    <div class="sec_7_cart_img position-relative">
+                        <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/FF-product-img-37-01.png"
+                            alt="">
+                        <button class="position-absolute sec_7_btn_1">Add To Cart</button>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-cart-arrow-down fa-xl  sec_7_cart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-regular position-absolute sec_7_cart_icons fa-heart fa-xl  sec_7_heart_icon"
+                            style="color: #000000;"></i>
+                        <i class="fa-solid position-absolute sec_7_cart_icons fa-arrows-spin fa-xl  sec_7_arrows_icon"
+                            style="color: #000000;"></i>
+                    </div>
+                    <h4>Two Seater Sofa</h4>
+                    <span><del>$115</del> $140.00</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section>section-8 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_8 position-relative">
+            <div class="sec_8_text tac position-absolute">
+                <span>Our Stores</span>
+                <h2>The Sofa You'll Love Forever</h2>
+                <p>Luctus inceptos nulla curabitur urna auctor euismod malesuada condimentum per turpis massa.laoreet
+                    sem consequat.</p>
+                <div class="sec_8_icons_text d-flex ">
+                    <div class="sec_8_icon_1">
+                        <i class="fa-solid fa-couch" style="color: #000000;"></i>
+                        <span>One stop shop</span>
+                    </div>
+                    <div class="sec_8_icon_1">
+                        <i class="fa-regular fa-map" style="color: #000000;"></i>
+                        <span>3D Visualization</span>
+                    </div>
+                    <div class="sec_8_icon_1">
+                        <i class="fa-solid fa-people-arrows" style="color: #000000;"></i>
+                        <span>Personalized Consulation</span>
+
+                    </div>
+                </div>
+                <button>View More Stores</button>
+            </div>
+            <div class="sec_8_img ">
+                <img src="./assets/Img/FF-filller-slider-bg-04.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>section-9 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_9 d-flex justify-content-between">
+            <div class="sec_9_text">
+                <span>Home Decors furnitures</span>
+                <h2>Home Furnitures Collections</h2>
+            </div>
+            <div class="sec_9_button aic">
+                <button>View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>section-10 start hear</section> -->
+    <section class="containar">
+        <div class="sec_10 justify-content-between d-flex tac sec_10_slider_wrapper">
+            <div class="col_25 sec_10_cart sec_10_slider" id="sec_10_slider">
+                <div class="sec_10_cart_img position-relative">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+                    <button class="sec_10_cart_button position-absolute">Add To cart</button>
+                </div>
+                <div class="sec_10_cart_text">
+                    <span>Stylish Furniture</span>
+                    <h4>Stylish Outdoor Sofa</h4>
+                    <span><del>$95.00</del> $90.00</span>
+                </div>
+
+            </div>
+
+            <div class="col_25 sec_10_cart ">
+                <div class="sec_10_cart_img position-relative sec_10_slider" id="sec_10_slider">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-2.jpg" alt="">
+                    <button class="sec_10_cart_button position-absolute">Add To cart</button>
+                </div>
+                <div class="sec_10_cart_text">
+                    <span>Stylish Furniture</span>
+                    <h4>Handmade Wooden Chair</h4>
+                    <span><del>$75.00</del> $70.00</span>
+                </div>
+
+
+            </div>
+
+            <div class="col_25 sec_10_cart ">
+                <div class="sec_10_cart_img position-relative sec_10_slider" id="sec_10_slider">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-3.jpg" alt="">
+                    <button class="sec_10_cart_button position-absolute">Add To cart</button>
+                </div>
+                <div class="sec_10_cart_text">
+                    <span>Stylish Furniture</span>
+                    <h4>Decorative Light</h4>
+                    <span><del>$25.00</del> $20.00</span>
+                </div>
+
+            </div>
+
+            <div class="col_25 sec_10_cart ">
+                <div class="sec_10_cart_img position-relative sec_10_slider" id="sec_10_slider">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-4.jpg" alt="">
+                    <button class="sec_10_cart_button position-absolute">Add To cart</button>
+                </div>
+                <div class="sec_10_cart_text">
+                    <span>Stylish Furniture</span>
+                    <h4>Cushion Lounge Chair</h4>
+                    <span><del>$125.00</del> $115.00</span>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="sec_10_dots">
+            <span class="sec_10_dot sec_10_active" onclick="moveSlide(0)"></span>
+            <span class="sec_10_dot" onclick="moveSlide(1)"></span>
+            <span class="sec_10_dot" onclick="moveSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- <section>section-11 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_11 d-flex">
+            <div class="col_50 sec_11_img">
+                <img src="./assets/Img/sec_11_img_1_-removebg-preview.png" alt="">
+            </div>
+            <div class="col_50 sec_11_text ">
+                <span>Style, Savings, Satisfaction</span>
+                <h2>Enjoy 40% Savings</h2>
+                <p>Accumsan montes nascetur tempor proin penatibus ligula curae eu metus maximus fringilla primis
+                    finibus nunc</p>
+                <input type="text">
+                <p>*By Submitting this form, you agree to receive Furiforma"'' email newsletter and promotional offers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>section-12 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_12 d-flex">
+            <div class="col_40 sec_12_img">
+                <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/testimonial-img-01.jpg" alt="">
+                <h4>Luxury Leather Sofa</h4>
+                <h5>$ 270.00</h5>
+            </div>
+            <div class="col_60 sec_12_text">
+                <h2>Feedback Fuels Us</h2>
+                <p>Sem elit at laoreet placerat congue urna sem. <strong>" Awesome Team"</strong> Nam luctus mauris
+                    nostra nisl lacinia elit penatibus senectus. Habitant etiam velit praesent, ridiculus consequat in
+                    natoque amet. Sodales porttitor quisque tellus himenaeos justo justo luctus enim taciti.</p>
+                <div class="sec_12_Team d-flex aic">
+                    <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/09/Home-1-Testimonial-img-01.jpg"
+                        alt="">
+                    <div class="sec_12_Team_Text ">
+                        <h5>Sofia Rose</h5>
+                        <span>HR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>section-13 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_13 d-flex aic">
+            <div class="col_50 sec_13_text">
+                <span>Latest Blogs & News</span>
+                <h2>Don't Miss Our Newest Post</h2>
+            </div>
+            <div class="col_50 sec_13_button ">
+                <button>View All Blogs</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section>section-14 start hear</section> -->
+
+    <section class="containar">
+        <div class="sec_14 d-flex justify-content-between">
+            <div class="col_50 d-flex sec_14_div_1">
+                <div class="col_50 sec_14_div_1_text">
+                    <span>2 December 2024</span>
+                    <h4>Stylish Wooden Bookcase Ideas</h4>
+                    <p>Luctus inceptos nulla curabitur urna auctor euismod malesuada condimentum per turpis
+                        massa.laoreet sem consequat. Donec diam enim,...</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col_50">
+                    <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/blog-01.jpg" alt="">
+                </div>
+            </div>
+            <div class="col_50 sec_14_div_2 d-flex">
+                <div class="col_50 sec_14_div_1_text">
+                    <span>2 December 2024</span>
+                    <h4>Comfy Sofa Shopping Guide</h4>
+                    <p>Luctus inceptos nulla curabitur urna auctor euismod malesuada condimentum per turpis
+                        massa.laoreet sem consequat. Donec diam enim,...</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col_50">
+                    <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/12/blog-03.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>section-15 start hear</section> -->
+
+
+    <section class="containar">
+        <div class="sec_15 d-flex">
+            <div class="col_25 d-flex">
+                <div class="sec_15_cart_icone">
+                    <i class="fa-solid fa-truck" style="color: #9e6747;"></i>
+                </div>
+                <div class="sec_15_cart_text">
+                    <h4>Door Delivery</h4>
+                    <p>Habitasse ad nisi duis praesent nullam habitasse</p>
+                </div>
+            </div>
+            <div class="col_25 d-flex">
+                <div class="sec_15_cart_icone">
+                    <i class="fa-solid fa-jet-fighter" style="color: #9e6747;"></i>
+                </div>
+                <div class="sec_15_cart_text">
+                    <h4>Free Shipping</h4>
+                    <p>Praesent idligula a diam hendrerit interdum quisnon .</p>
+                </div>
+            </div>
+            <div class="col_25 d-flex">
+                <div class="sec_15_cart_icone">
+                    <i class="fa-regular fa-credit-card" style="color: #9e6747;"></i>
+                </div>
+                <div class="sec_15_cart_text">
+                    <h4>Secure Payments</h4>
+                    <p>Donec ac purus non libero vulputa teultr ices uisque .</p>
+                </div>
+            </div>
+            <div class="col_25 d-flex">
+                <div class="sec_15_cart_icone">
+                    <i class="fa-solid fa-headphones" style="color: #9e6747;"></i>
+                </div>
+                <div class="sec_15_cart_text">
+                    <h4>24x7 Support</h4>
+                    <p>Felis hendrerit aliquet. Quisque justo , ac ligula.</p>
+                </div>
+            </div>
+            <!-- <div class="col_25 d-flex">
+                <div class="sec_15_cart_icone">
+                    <i class="fa-solid fa-shield" style="color: #9e6747;"></i>
+                </div>
+                <div class="sec_15_cart_text">
+                    <h4>Trusted Partners</h4>
+                    <p>Vestibulum augue nibh, eget ante nec, viverra leo.</p>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- <section>Footer start hear</section> -->
+
+    <section>
+        <div class="Footer d-flex">
+            <div class="col_60 d-flex Footer_div_1">
+                <div class="col_30 Footer_cart_1">
+                    <img src="	https://furniforma.wpengine.com/wp-content/themes/furniforma/assets/images/logo.svg"
+                        alt="">
+                    <p>Rhoncus hac a tristique malesuada fermentum ligula himenaeos lobortis velit dui lacinia nulla mus
+                        commodo. </p>
+                    <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/10/google-play-button.jpg"
+                        alt="">
+                    <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/10/app-store-button.jpg" alt="">
+                </div>
+                <div class="col_30 Footer_cart_2">
+                    <h4>Contact Us</h4>
+
+                    <div class="Footer_address d-flex">
+                        <i class="fa-solid fa-location-dot" style="color: #9e6747;"></i>
+                        <p>No: 58 A, East Madison Street,Baltimore, MD, USA 4508</p>
+                    </div>
+                    <div class="Footer_Email d-flex">
+                        <i class="fa-solid fa-envelope" style="color: #9e6747;"></i>
+                        <p>info@example.com</p>
+                    </div>
+                    <div class="Footer_contacts d-flex">
+                        <i class="fa-solid fa-phone" style="color: #9e6747;"></i>
+                        <p>000 - 123 - 456789</p>
+                    </div>
+
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="col_30 Footer_cart_3">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li>Size Guide</li>
+                        <li>Gift Cards</li>
+                        <li>Furniture Care Tips</li>
+                        <li>Style Guide</li>
+                        <li>Makeover Ideas</li>
+                        <li>Customer Stories</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col_40  Footer_div_2">
+                <img src="	https://furniforma.wpengine.com/wp-content/uploads/2024/10/FF-Footer-Hotspot-Img.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/Js/abc.js"></script>
 </body>
 
 </html>

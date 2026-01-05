@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider-wrapper {
+      width: 1240px;
+      /* 4 images × 300px + gaps */
+      overflow: hidden;
+      margin: 40px auto;
+    }
+
+    .slider {
+      display: flex;
+      gap: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .slider img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* dots */
+    .dots {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 6px;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: #222;
+    }
+
+    .d_flex {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slider-wrapper">
+    <div class="slider" id="slider">
+
+      <div class="d_flex">
+        <div class="sec_10_cart_img position-relative">
+          <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+          <button class="sec_10_cart_button position-absolute">Add To cart</button>
+        </div>
+        <div class="sec_10_cart_text">
+          <span>Stylish Furniture</span>
+          <h4>Stylish Outdoor Sofa</h4>
+          <span><del>$95.00</del> $90.00</span>
+        </div>
+      </div>
+
+      <div class="d_flex">
+        <div class="sec_10_cart_img position-relative">
+          <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+          <button class="sec_10_cart_button position-absolute">Add To cart</button>
+        </div>
+        <div class="sec_10_cart_text">
+          <span>Stylish Furniture</span>
+          <h4>Stylish Outdoor Sofa</h4>
+          <span><del>$95.00</del> $90.00</span>
+        </div>
+      </div>
+
+      <div class="d_flex">
+        <div class="sec_10_cart_img position-relative">
+          <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+          <button class="sec_10_cart_button position-absolute">Add To cart</button>
+        </div>
+        <div class="sec_10_cart_text">
+          <span>Stylish Furniture</span>
+          <h4>Stylish Outdoor Sofa</h4>
+          <span><del>$95.00</del> $90.00</span>
+        </div>
+      </div>
+
+      <div class="d_flex">
+        <div class="sec_10_cart_img position-relative">
+          <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+          <button class="sec_10_cart_button position-absolute">Add To cart</button>
+        </div>
+        <div class="sec_10_cart_text">
+          <span>Stylish Furniture</span>
+          <h4>Stylish Outdoor Sofa</h4>
+          <span><del>$95.00</del> $90.00</span>
+        </div>
+      </div>
+
+     <div class="d_flex">
+        <div class="sec_10_cart_img position-relative">
+          <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+          <button class="sec_10_cart_button position-absolute">Add To cart</button>
+        </div>
+        <div class="sec_10_cart_text">
+          <span>Stylish Furniture</span>
+          <h4>Stylish Outdoor Sofa</h4>
+          <span><del>$95.00</del> $90.00</span>
+        </div>
+      </div>
+
+      <div class="d_flex">
+        <div class="sec_10_cart_img position-relative">
+          <img src="https://furniforma.wpengine.com/wp-content/uploads/2024/12/product-1.jpg" alt="">
+          <button class="sec_10_cart_button position-absolute">Add To cart</button>
+        </div>
+        <div class="sec_10_cart_text">
+          <span>Stylish Furniture</span>
+          <h4>Stylish Outdoor Sofa</h4>
+          <span><del>$95.00</del> $90.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot active" onclick="moveSlide(0)"></span>
+    <span class="dot" onclick="moveSlide(1)"></span>
+    <span class="dot" onclick="moveSlide(2)"></span>
+  </div>
+
+
+  <script>
+    const slider = document.getElementById("slider");
+    const dots = document.querySelectorAll(".dot");
+
+    function moveSlide(index) {
+      slider.style.transform = `translateX(-${index * 310}px)`;
+
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
+  </script>
+
+
+
+</body>
+
+</html>
